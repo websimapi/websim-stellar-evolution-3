@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stellar Evolution</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <div id="status-bar">
+      <div class="resource" id="energy-status">
+        <span class="icon">⚡</span>
+        <span class="value">0</span>
+      </div>
+      <div class="resource" id="minerals-status">
+        <span class="icon">💎</span>
+        <span class="value">0</span>
+      </div>
+      <div class="resource" id="knowledge-status">
+        <span class="icon">🔬</span>
+        <span class="value">0</span>
+      </div>
+      <div class="resource" id="population-status">
+        <span class="icon">👤</span>
+        <span class="value">0</span>
+      </div>
+      <div id="current-year">Year: 2150</div>
+    </div>
+    
+    <div id="output-container">
+      <div id="text-output"></div>
+    </div>
+
+    <div id="input-container">
+      <input type="text" id="command-input" placeholder="Enter your command..." autocomplete="off">
+      <button id="send-command">Send</button>
+    </div>
+
+    <div id="control-panel">
+      <button id="save-game">Save Game</button>
+      <button id="load-game">Load Game</button>
+      <button id="new-game">New Game</button>
+    </div>
+  </div>
+
+  <script src="gameState.js"></script>
+  <script src="gameLogic.js"></script>
+  <script src="nlp.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
